@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xGH-xO-cC9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Premium View Controller-->
+        <scene sceneID="rzc-8W-jXG">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="xGH-xO-cC9" customClass="AboutPremiumViewController" customModule="Motivation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWO-ri-BXK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnz-Ja-ymL">
+                                <rect key="frame" x="30" y="353" width="354" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fhi-eu-f5B">
+                                        <rect key="frame" x="0.0" y="170" width="354" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOO-4P-hjQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                                <color key="backgroundColor" red="0.27488538019999997" green="0.78039215689999997" blue="0.46684807319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="2.49 $">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-AK-NMn">
+                                                <rect key="frame" x="177" y="0.0" width="177" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.23400941850000001" blue="0.29632782079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Позже">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="closeButtonAction:" destination="xGH-xO-cC9" eventType="touchUpInside" id="MXC-6D-7dr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Премиум-версия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT9-je-eJI">
+                                        <rect key="frame" x="10" y="10" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-QZ-Tzn">
+                                        <rect key="frame" x="15" y="39" width="324" height="90"/>
+                                        <string key="text">Вы получаете множественные напоминания, возможность просматривать и редактировать историю выполнения привычек, расширенную статистику и ещё больше возможностей в будущем.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Fhi-eu-f5B" secondAttribute="trailing" id="80O-ek-coo"/>
+                                    <constraint firstItem="IRc-QZ-Tzn" firstAttribute="leading" secondItem="Xnz-Ja-ymL" secondAttribute="leading" constant="15" id="LKk-8J-xhw"/>
+                                    <constraint firstAttribute="trailing" secondItem="IRc-QZ-Tzn" secondAttribute="trailing" constant="15" id="RTE-Pf-5nU"/>
+                                    <constraint firstItem="Fhi-eu-f5B" firstAttribute="leading" secondItem="Xnz-Ja-ymL" secondAttribute="leading" id="cad-gf-e5e"/>
+                                    <constraint firstItem="gT9-je-eJI" firstAttribute="leading" secondItem="Xnz-Ja-ymL" secondAttribute="leading" constant="10" id="dwP-3o-217"/>
+                                    <constraint firstAttribute="trailing" secondItem="gT9-je-eJI" secondAttribute="trailing" constant="10" id="fhU-v0-Yda"/>
+                                    <constraint firstItem="IRc-QZ-Tzn" firstAttribute="top" secondItem="gT9-je-eJI" secondAttribute="bottom" constant="5" id="i5R-xW-Jjg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fhi-eu-f5B" secondAttribute="bottom" id="ls0-4q-RgT"/>
+                                    <constraint firstItem="gT9-je-eJI" firstAttribute="centerX" secondItem="Xnz-Ja-ymL" secondAttribute="centerX" id="odd-Kg-HZz"/>
+                                    <constraint firstAttribute="height" constant="200" id="pAi-Tu-qcC"/>
+                                    <constraint firstItem="gT9-je-eJI" firstAttribute="top" secondItem="Xnz-Ja-ymL" secondAttribute="top" constant="10" id="sdU-7Q-Q1Y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29989833047945208" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xnz-Ja-ymL" firstAttribute="centerX" secondItem="mEY-86-Bnu" secondAttribute="centerX" id="Mkj-Kg-0vc"/>
+                            <constraint firstItem="mEY-86-Bnu" firstAttribute="trailing" secondItem="Xnz-Ja-ymL" secondAttribute="trailing" constant="30" id="OAQ-5o-p79"/>
+                            <constraint firstItem="Xnz-Ja-ymL" firstAttribute="leading" secondItem="mEY-86-Bnu" secondAttribute="leading" constant="30" id="bMg-rj-SyZ"/>
+                            <constraint firstItem="Xnz-Ja-ymL" firstAttribute="centerY" secondItem="mEY-86-Bnu" secondAttribute="centerY" id="vgd-dJ-QeQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mEY-86-Bnu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wja-OQ-9q5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+</document>
