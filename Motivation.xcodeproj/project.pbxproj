@@ -37,6 +37,7 @@
 		88C3C41324B861880049397A /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C3C41224B861880049397A /* Add.storyboard */; };
 		88C3C41624B861A00049397A /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3C41524B861A00049397A /* AddTableViewCell.swift */; };
 		88C3C41824B861B50049397A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3C41724B861B50049397A /* AddViewController.swift */; };
+		88E55ED924C887DA006759A1 /* ContentManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */; };
 		88EEA33024C7601400797354 /* AddHabitProperty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EEA32F24C7601400797354 /* AddHabitProperty.storyboard */; };
 		88EEA33224C7602400797354 /* AddHabitPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEA33124C7602400797354 /* AddHabitPropertyTableViewCell.swift */; };
 		88EEA33424C7603A00797354 /* AddHabitPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEA33324C7603A00797354 /* AddHabitPropertyViewController.swift */; };
@@ -77,6 +78,7 @@
 		88C3C41224B861880049397A /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		88C3C41524B861A00049397A /* AddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
 		88C3C41724B861B50049397A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManagerViewController.swift; sourceTree = "<group>"; };
 		88EEA32F24C7601400797354 /* AddHabitProperty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddHabitProperty.storyboard; sourceTree = "<group>"; };
 		88EEA33124C7602400797354 /* AddHabitPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitPropertyTableViewCell.swift; sourceTree = "<group>"; };
 		88EEA33324C7603A00797354 /* AddHabitPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitPropertyViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		881F46BD24AF3AC70087596D /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				88E55ED624C887BD006759A1 /* ContentManager */,
 				88EEA32B24C75FD600797354 /* AddHabitProperty */,
 				881F133724C086F9008F7AB8 /* ShopHabbits */,
 				88C3C40F24B861680049397A /* AddHabit */,
@@ -482,6 +485,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		88E55ED624C887BD006759A1 /* ContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				88E55ED724C887C2006759A1 /* ViewController */,
+			);
+			path = ContentManager;
+			sourceTree = "<group>";
+		};
+		88E55ED724C887C2006759A1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		88EEA32B24C75FD600797354 /* AddHabitProperty */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +675,7 @@
 				88114A1324AFD7EE0062C547 /* TabBarViewController.swift in Sources */,
 				888DBAE424B77855006201ED /* InstallTimeTableViewCell.swift in Sources */,
 				886983AD24C4707A00F920F2 /* HabitsTableViewCell.swift in Sources */,
+				88E55ED924C887DA006759A1 /* ContentManagerViewController.swift in Sources */,
 				881F46C424AF3B160087596D /* StartScreenViewController.swift in Sources */,
 				88114A0624AFCD3B0062C547 /* ShopViewController.swift in Sources */,
 				88C3C41624B861A00049397A /* AddTableViewCell.swift in Sources */,
