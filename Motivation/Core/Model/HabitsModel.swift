@@ -8,17 +8,18 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class HabitsModel {
+class HabitsModel: Object {
     
-    var nameLabel: String
-    var countLabel: String
-    var image: String
+    @objc dynamic var nameLabel = ""
+    @objc dynamic var countLabel = ""
+    @objc dynamic var id = 0
     
-    init(nameLabel: String, countLabel: String, image: String) {
+    func setup(nameLabel: String, countLabel: String, id: Int) {
         self.nameLabel = nameLabel
         self.countLabel = countLabel
-        self.image = image
+        self.id = id
     }
     
 }

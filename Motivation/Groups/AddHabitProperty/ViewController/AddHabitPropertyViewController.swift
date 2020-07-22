@@ -65,7 +65,7 @@ extension AddHabitPropertyViewController: UITableViewDelegate {
         } else if indexPath.section == 0 && indexPath.row == 2 {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
             navigationController?.popViewController(animated: true)
-        } else if indexPath.row == 0 && indexPath.row == 3 {
+        } else if indexPath.section == 0 && indexPath.row == 3 {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
             navigationController?.popViewController(animated: true)
         } else if indexPath.section == 0 && indexPath.row == 4 {

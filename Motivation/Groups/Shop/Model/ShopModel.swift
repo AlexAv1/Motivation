@@ -8,13 +8,16 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class ShopModel {
+class ShopModel: Object {
     
-    var nameLabel: String
+    @objc dynamic var nameLabel = ""
+    @objc dynamic var id = 0
     
-    init(nameLabel:String) {
+    func setup(nameLabel:String, id: Int) {
         self.nameLabel = nameLabel
+        self.id = id
     }
     
 }
