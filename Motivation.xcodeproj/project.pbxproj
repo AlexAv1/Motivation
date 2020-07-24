@@ -23,6 +23,7 @@
 		881F46C424AF3B160087596D /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F46C324AF3B160087596D /* StartScreenViewController.swift */; };
 		881F46C824AF3FD10087596D /* StartScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F46C724AF3FD10087596D /* StartScreenCollectionViewCell.swift */; };
 		881F46CA24AF3FE60087596D /* StartScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881F46C924AF3FE60087596D /* StartScreenModel.swift */; };
+		88549C0B24CA183600CDA519 /* HabitsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88549C0A24CA183600CDA519 /* HabitsType.swift */; };
 		886983AD24C4707A00F920F2 /* HabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886983AC24C4707A00F920F2 /* HabitsTableViewCell.swift */; };
 		8871571B24BF1A1400C8686A /* HabitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8871571A24BF1A1400C8686A /* HabitsModel.swift */; };
 		8888EFD824C1013F00DE1714 /* ShopHabbitsViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888EFD724C1013F00DE1714 /* ShopHabbitsViewControllerType.swift */; };
@@ -37,10 +38,10 @@
 		88C3C41324B861880049397A /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C3C41224B861880049397A /* Add.storyboard */; };
 		88C3C41624B861A00049397A /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3C41524B861A00049397A /* AddTableViewCell.swift */; };
 		88C3C41824B861B50049397A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C3C41724B861B50049397A /* AddViewController.swift */; };
-		88E55ED924C887DA006759A1 /* ContentManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */; };
 		88EEA33024C7601400797354 /* AddHabitProperty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EEA32F24C7601400797354 /* AddHabitProperty.storyboard */; };
 		88EEA33224C7602400797354 /* AddHabitPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEA33124C7602400797354 /* AddHabitPropertyTableViewCell.swift */; };
 		88EEA33424C7603A00797354 /* AddHabitPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EEA33324C7603A00797354 /* AddHabitPropertyViewController.swift */; };
+		88F48A8624C8B2E30070BE8F /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F48A8524C8B2E30070BE8F /* ContentManager.swift */; };
 		947CA9A5D3926C64499DFE7A /* Pods_Motivation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FACB0836944BD97AF0BD9AE /* Pods_Motivation.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		881F46C324AF3B160087596D /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		881F46C724AF3FD10087596D /* StartScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		881F46C924AF3FE60087596D /* StartScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenModel.swift; sourceTree = "<group>"; };
+		88549C0A24CA183600CDA519 /* HabitsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsType.swift; sourceTree = "<group>"; };
 		886983AC24C4707A00F920F2 /* HabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsTableViewCell.swift; sourceTree = "<group>"; };
 		8871571A24BF1A1400C8686A /* HabitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsModel.swift; sourceTree = "<group>"; };
 		8888EFD724C1013F00DE1714 /* ShopHabbitsViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHabbitsViewControllerType.swift; sourceTree = "<group>"; };
@@ -78,10 +80,10 @@
 		88C3C41224B861880049397A /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		88C3C41524B861A00049397A /* AddTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
 		88C3C41724B861B50049397A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManagerViewController.swift; sourceTree = "<group>"; };
 		88EEA32F24C7601400797354 /* AddHabitProperty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddHabitProperty.storyboard; sourceTree = "<group>"; };
 		88EEA33124C7602400797354 /* AddHabitPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitPropertyTableViewCell.swift; sourceTree = "<group>"; };
 		88EEA33324C7603A00797354 /* AddHabitPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitPropertyViewController.swift; sourceTree = "<group>"; };
+		88F48A8524C8B2E30070BE8F /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		8FACB0836944BD97AF0BD9AE /* Pods_Motivation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79B81BB0020B3DF222E308F /* Pods-Motivation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivation.release.xcconfig"; path = "Target Support Files/Pods-Motivation/Pods-Motivation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -356,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				8871571A24BF1A1400C8686A /* HabitsModel.swift */,
+				88549C0A24CA183600CDA519 /* HabitsType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -488,17 +491,9 @@
 		88E55ED624C887BD006759A1 /* ContentManager */ = {
 			isa = PBXGroup;
 			children = (
-				88E55ED724C887C2006759A1 /* ViewController */,
+				88F48A8524C8B2E30070BE8F /* ContentManager.swift */,
 			);
 			path = ContentManager;
-			sourceTree = "<group>";
-		};
-		88E55ED724C887C2006759A1 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				88E55ED824C887DA006759A1 /* ContentManagerViewController.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		88EEA32B24C75FD600797354 /* AddHabitProperty */ = {
@@ -663,6 +658,8 @@
 				881F134024C0874E008F7AB8 /* ShopHabbitsTableViewCell.swift in Sources */,
 				881F133E24C0873C008F7AB8 /* ShopHabbitsViewController.swift in Sources */,
 				888DBACF24B713A4006201ED /* SettingTableViewCell.swift in Sources */,
+				88549C0B24CA183600CDA519 /* HabitsType.swift in Sources */,
+				88F48A8624C8B2E30070BE8F /* ContentManager.swift in Sources */,
 				881F46CA24AF3FE60087596D /* StartScreenModel.swift in Sources */,
 				88114A0424AFCD310062C547 /* HabitsViewController.swift in Sources */,
 				888DBA9424B5B37D006201ED /* ShopModel.swift in Sources */,
@@ -675,7 +672,6 @@
 				88114A1324AFD7EE0062C547 /* TabBarViewController.swift in Sources */,
 				888DBAE424B77855006201ED /* InstallTimeTableViewCell.swift in Sources */,
 				886983AD24C4707A00F920F2 /* HabitsTableViewCell.swift in Sources */,
-				88E55ED924C887DA006759A1 /* ContentManagerViewController.swift in Sources */,
 				881F46C424AF3B160087596D /* StartScreenViewController.swift in Sources */,
 				88114A0624AFCD3B0062C547 /* ShopViewController.swift in Sources */,
 				88C3C41624B861A00049397A /* AddTableViewCell.swift in Sources */,

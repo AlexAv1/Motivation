@@ -14,8 +14,11 @@ class ShopViewController: UIViewController {
     // - UI
     @IBOutlet weak var tableView: UITableView!
     
+    // - Realm
+    let realm = try! Realm()
+    
     // - Data
-    var shops = [ShopModel]()
+//    var shops = [ShopModel]()
     var improvementHabits = [HabitsModel]()
     var efficiencyHabits = [HabitsModel]()
     var societyHabits = [HabitsModel]()
@@ -37,11 +40,13 @@ class ShopViewController: UIViewController {
 
 extension ShopViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let shops = realm.objects(ShopModel.self)
         return shops.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTableViewCell", for: indexPath ) as! ShopTableViewCell
+        let shops = realm.objects(ShopModel.self)
         let shop = shops[indexPath.row]
         cell.nameLabel.text = shop.nameLabel
         return cell
@@ -56,22 +61,22 @@ extension ShopViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let shopHabVC = UIStoryboard(name: "ShopHabbits", bundle: nil).instantiateInitialViewController() as! ShopHabbitsViewController
-        switch indexPath.row {
-        case 0:
-            shopHabVC.habits = healthHabits
-        case 1:
-            shopHabVC.habits = fitnessHabits
-        case 2:
-            shopHabVC.habits = homeHabits
-        case 3:
-            shopHabVC.habits = hobbiesHabits
-        case 4:
-            shopHabVC.habits = societyHabits
-        case 5:
-            shopHabVC.habits = improvementHabits
-        default:
-            shopHabVC.habits = creationHabits
-        }
+//        switch indexPath.row {
+//        case 0:
+//            shopHabVC.habits = healthHabits
+//        case 1:
+//            shopHabVC.habits = fitnessHabits
+//        case 2:
+//            shopHabVC.habits = homeHabits
+//        case 3:
+//            shopHabVC.habits = hobbiesHabits
+//        case 4:
+//            shopHabVC.habits = societyHabits
+//        case 5:
+//            shopHabVC.habits = improvementHabits
+//        default:
+//            shopHabVC.habits = creationHabits
+//        }
         navigationController?.pushViewController(shopHabVC, animated: true)
     }
     
@@ -86,6 +91,7 @@ private extension ShopViewController {
         configureTableView()
 //        configureShops()
         configureTitle()
+        configureContentManager()
 //        configureHealthHabits()
 //        configureFitnessHabits()
 //        configureHomeHabits()
@@ -99,6 +105,10 @@ private extension ShopViewController {
     func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    func configureContentManager() {
+        ContentManager().configure()
     }
 //
 //    func configureShops() {

@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ShopHabbitsViewController: UIViewController {
+    
+    // - Realm
+    let realm = try! Realm()
     
     // - UI
     @IBOutlet weak var tableView: UITableView!
@@ -17,7 +21,7 @@ class ShopHabbitsViewController: UIViewController {
     var type = ShopHabbitsViewControllerType.health
     
     private var actives = Array(repeating: false, count: 19)
-    var habits = [HabitsModel]()
+//    var habits = [HabitsModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +36,13 @@ class ShopHabbitsViewController: UIViewController {
 extension ShopHabbitsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let habits = realm.objects(HabitsModel.self)
         return habits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShopHabbitsTableViewCell", for: indexPath ) as! ShopHabbitsTableViewCell
+        let habits = realm.objects(HabitsModel.self)
         let hab = habits[indexPath.row]
         
         if actives[indexPath.row] == false {
